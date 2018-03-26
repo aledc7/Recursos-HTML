@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- EJEMPLO DE SCROLL VIEW HORIZONTAL CON UNA IMAGEN MAS GRANDE QUE EL DIV, HABILITANDO LA BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>scroll-OK-1</title>
+</head>
+<style>
+
+.div-padre
+	{
+	width:1250px; /* Tamaño que tendrá el DIV padre */
+	height:220px; /* T */
+	overflow: auto;
+	border:1px solid #000000; /* Solo lo puse para que se vea el cuadro*/
+	box-shadow: 10px 10px 5px grey;
+	}
+	.div-hijo{
+		width: 2700px;
+		height: 200px;
+	}
+</style>
+
+
+
+
+<body>
+
+	<!-- PONGO UN DIV DENTRO DE OTRO DIV MAS GRANDE, ENTONCES CON LA PROPIEDAD "overflow:auto" aparecera la barra de scroll -->
+<div class="div-padre">
+		<div class="div-hijo">
+			<img src="a.svg" alt="">
+		</div>
+</div>
+<p>Este parrafo es para ver que no escrolee nada mas que el DIV</p>
+</body>
+</html>

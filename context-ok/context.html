@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="contextmenu.css" type="text/css" media="all" />
+   </head>
+  <body>
+
+
+<!-- Primer Menu Contextual  -->
+  <cmenu type="context" id="samplemenu">
+    <menuitem label="camaras" onclick="window.open('http://190.210.180.179/vxg/vxg4.html')"></menuitem>
+    <hr />
+    <menuitem label="Popup" onclick="window.open('http://190.210.180.179/aledc/popup.html')"></menuitem>
+    <hr />
+    <menuitem label="chat 1" onclick="window.open('http://190.210.180.179/aledc/checklist.html')"></menuitem>
+    <menuitem label="chat 2" onclick="window.open('http://190.210.180.179/aledc/chat.html')"></menuitem>
+    <menuitem label="Dashboard" onclick="window.open('http://190.210.180.179:7070/')"></menuitem>
+    <cmenu label="Primer Submenu">
+      <menuitem label="Graficas" onclick="window.open('http://190.210.180.179:3000/dashboard/db/pantalla-grande?refresh=2m&orgId=1')"></menuitem>
+      <menuitem label="Circuito Virtual" onclick="window.open('http://190.210.180.179/Semtur/circuitoVirtual.html')"></menuitem>
+      <menuitem label="Listados" onclick="window.open('http://190.210.180.179:7070/listados2/')"></menuitem>
+    </cmenu>
+    <cmenu label="aca tambien">
+      <menuitem label="Mapa" onclick="window.open('http://190.210.183.216:8083//mapa_seguimiento.php')"></menuitem>
+      <menuitem label="ABM Choferes" onclick="window.open('http://190.210.180.179:8069/web?#id=&view_type=form&model=res.users&menu_id=58&action=65')"></menuitem>
+      <menuitem label="ABM Coches" onclick="window.open('http://190.210.180.179:8069/web#id=&view_type=form&model=fleet.vehicle&action=100')"></menuitem>
+    </cmenu>
+    <menuitem label="Mas cosas" onclick="alert('Tecno Flota');"></menuitem>
+  </cmenu>
+
+<!-- Segundo Menu Contextual  -->
+
+  <cmenu type="context" id="samplemenu2">
+    <menuitem label="Otra Cosa" onclick="window.open('http://190.210.180.179/vxg/vxg4.html')"></menuitem>
+    <hr />
+    <menuitem label="Mas Cosas" onclick="window.open('http://190.210.180.179/aledc/popup.html')"></menuitem>
+    <hr />
+    <menuitem label="otro Menu" onclick="window.open('http://190.210.180.179/aledc/checklist.html')"></menuitem>
+    <cmenu label="Primer Submenu">
+      <menuitem label="Graficas" onclick="window.open('http://190.210.180.179:3000/dashboard/db/pantalla-grande?refresh=2m&orgId=1')"></menuitem>
+      <menuitem label="Circuito Virtual" onclick="window.open('http://190.210.180.179/Semtur/circuitoVirtual.html')"></menuitem>
+      <menuitem label="Listados" onclick="window.open('http://190.210.180.179:7070/listados2/')"></menuitem>
+    </cmenu>
+    <cmenu label="aca tambien">
+      <menuitem label="Mapa" onclick="window.open('http://190.210.183.216:8083//mapa_seguimiento.php')"></menuitem>
+      <menuitem label="ABM Choferes" onclick="window.open('http://190.210.180.179:8069/web?#id=&view_type=form&model=res.users&menu_id=58&action=65')"></menuitem>
+      <menuitem label="ABM Coches" onclick="window.open('http://190.210.180.179:8069/web#id=&view_type=form&model=fleet.vehicle&action=100')"></menuitem>
+    </cmenu>
+    <menuitem label="Mas cosas" onclick="alert('Tecno Flota');"></menuitem>
+  </cmenu>
+
+<!-- Tercer Menu Contextual -->
+
+  <cmenu type="context" id="samplemenu3">
+    <menuitem label="Otra Cosa" onclick="window.open('http://190.210.180.179/vxg/vxg4.html')"></menuitem>
+    <hr />
+    <menuitem label="Mas Cosas" onclick="window.open('http://190.210.180.179/aledc/popup.html')"></menuitem>
+    <hr />
+    <menuitem label="otro Menu" onclick="window.open('http://190.210.180.179/aledc/checklist.html')"></menuitem>
+    <!--<cmenu label="Primer Submenu">
+      <menuitem label="Graficas" onclick="window.open('http://190.210.180.179:3000/dashboard/db/pantalla-grande?refresh=2m&orgId=1')"></menuitem>
+      <menuitem label="Circuito Virtual" onclick="window.open('http://190.210.180.179/Semtur/circuitoVirtual.html')"></menuitem>
+      <menuitem label="Listados" onclick="window.open('http://190.210.180.179:7070/listados2/')"></menuitem>
+    </cmenu> 
+    <cmenu label="aca tambien">
+      <menuitem label="Mapa" onclick="window.open('http://190.210.183.216:8083//mapa_seguimiento.php')"></menuitem>
+      <menuitem label="ABM Choferes" onclick="window.open('http://190.210.180.179:8069/web?#id=&view_type=form&model=res.users&menu_id=58&action=65')"></menuitem>
+      <menuitem label="ABM Coches" onclick="window.open('http://190.210.180.179:8069/web#id=&view_type=form&model=fleet.vehicle&action=100')"></menuitem>
+    </cmenu> -->
+    <menuitem label="Mas cosas" onclick="alert('Tecno Flota');"></menuitem>
+  </cmenu>
+
+
+<!-- Botones  -->
+
+
+
+ <button contextmenu="samplemenu" style="margin-top: 20px; margin-left: 250px">coche 7</button>
+
+
+<button contextmenu="samplemenu2" style="margin-top: 300px; margin-left: 100px">coche 4</button>
+
+
+<button contextmenu="samplemenu3" style="margin-top: 300px; margin-left: 100px">coche X</button>
+
+<!-- Fin  Botones  -->
+
+    <script type="text/javascript" src="contextmenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+
+<!-- Viernes 24-11-2017 - Primer clase de Javascript  -->
+<!DOCtype html>
+<html>
+<head>
+    <script src="funciones.js"></script>
+    <script src="contextmenu.js"></script>
+
+</head>
+
+<body> 
+
+
+
+<h1 id='titulo1'> Prendiendo y apagando la Luz  </h1>
+
+
+<button onclick="enciende()">prender la luz</button>
+<img id="bombita" src="pic_bulboff.gif" style=width:140px">
+<button onclick="apaga()">Apagar la luz</button>
+
+<h1 id='texto_multiplica'>Aca aparecerá la multiplicacion </h1>
+
+<button onclick="textobig()">Hacer grande Texto</button>
+
+
+<script>
+    raiz_cubica(3);
+</script>
+
+
+
+<button onclick="textosmall()">Hacer chico Texto</button>
+
+<button onclick="desaparece()">Desaparecer-Lamparita</button>
+<button onclick="aparece()">Aparecer-Lamparita</button>
+<br>
+<br>
+<!-- invoco a la funcion multiplica, le paso los parametros 9 y 2, luego mediante getElement lo meto en el texto   -->
+
+
+<button onclick="pone_en_texto()">Multiplicar</button>
+
+<br>
+<br>
+<span class="context-menu-one btn btn-neutral">right click me</span>
+
+
+
+
+
+<button onclick="cubica(x)">cubica</button>
+
+<script>
+    var x = 3;
+    cubica(x);
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+function cubica(x){
+    alert(x*x*x);
+}
+
+</script>
+
+
+
+
+</html>

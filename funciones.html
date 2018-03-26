@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Probando Funciones</title>
+
+
+
+<script type="text/javascript">
+	
+	
+	
+
+	function informeBoton(botonId, botonNombre, botonValor){
+		//info sobre la Id del boton
+		var userMessage1 = "Id del Boton: " + botonId + "\n";
+		//Info sobre el nombre del boton
+		var userMessage2 = "Nombre del Boton: " + botonNombre + "\n";
+		//info sobre valor del boton
+		var userMessage3 = "Valor del Boton: " + botonValor;
+
+		alert(userMessage1 + userMessage2 + userMessage3);
+	}
+
+
+	function areaCirc(r){.         //esta funcion devuelve el resultado de esa multiplicacion
+		return 3.1416 * (r * r);
+	}
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+
+<div align="center" style="margin-top:10%;"> 
+
+<input type="button" id="id1" name="Boton izquierdo" value="Izquierdo"
+onclick="informeBoton(this.id, this.name, this.value)" />
+
+<input type="button" id="id2" name="Boton central" value="Central"
+onclick="informeBoton(this.id, this.name, this.value)" />
+
+<input type="button" id="id3" name="Boton derecho" value="Derecho"
+onclick="informeBoton(this.id, this.name, this.value)" />
+
+</div>
+
+
+<div align="center" style="margin-top:10%;">
+<script>
+	var resultado = areaCirc(4); //aca se ve el return en accion
+	document.write("El area es: " + resultado);
+
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

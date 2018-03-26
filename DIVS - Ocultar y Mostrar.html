@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mostrar y Ocultar DIVs</title>
+</head>
+<body>
+
+
+<div id="div_1" style="display:none;">
+<p>ESTE ES EL DIV UNO</p>
+
+<svg width="400" height="400">
+   <circle cx="200" cy="200" r="200" stroke="green" stroke-width="4" fill="yellow" />
+</svg> 
+
+</div>
+
+
+
+<div id="div_2" style="display:block;>
+
+<p align="center">ESTE ES EL DIV DOS</p>
+
+
+
+<svg width="400" height="400">
+   <circle cx="200" cy="200" r="200" stroke="red" stroke-width="4" fill="blue" />
+</svg> 
+
+</div>
+
+
+
+
+<div>
+<button onclick="cv_viejo()">DIV 1</button>
+<button onclick="cv_nuevo()">DIV 2</button>
+</div>
+
+
+</body>
+
+
+<script>
+	
+
+function cv_viejo(){
+var div_viejo = document.getElementById("div_1");
+var div_nuevo = document.getElementById("div_2");
+
+
+div_nuevo.style.display = "none";
+
+if (div_viejo.style.display === "none"){  // con none se oculta
+
+	div_viejo.style.display = "block"; //con block se muestra
+}else{
+	 alert('ya se está mostrando el DIV 1');
+}
+} //fin funcion cv_viejo
+
+
+
+
+
+function cv_nuevo(){
+var div_viejo = document.getElementById("div_1");
+var div_nuevo = document.getElementById("div_2");
+
+div_viejo.style.display = "none";
+
+if (div_nuevo.style.display === "none"){
+
+	div_nuevo.style.display = "block";
+}else{
+	 alert('ya se está mostrando el DIV 2');
+
+}
+} //fin funcion cv_viejo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</html>
