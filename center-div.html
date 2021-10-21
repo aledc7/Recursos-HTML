@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar lo que sea</title>
+</head>
+<body>
+
+    <div>
+        <div>
+            <div>
+                <div class="centrado">
+                    <h2>Texto Centrado </h2>
+                </div>
+                <div class="content">
+                    
+                    <img src="img/css.png" alt="" style="width: 250px;">
+                </div>
+            </div>
+
+            <input type="text" name="" id="">
+            <input type="number" name="" id="">
+        </div>
+    </div>
+    
+</body>
+
+
+<style>
+    .centrado{
+        /* Centrado Horizontal */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+
+        /* Centrado Vertical */
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+
+    }
+
+    .content img{
+        filter: drop-shadow(2px 4px 8px #585858);
+    }
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    /* .content{
+        cursor: url(img/css.png), auto;
+    } */
+
+
+
+</style>
+</html>
